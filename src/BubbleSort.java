@@ -1,18 +1,14 @@
 import java.util.ArrayList;
 
 public class BubbleSort {
-    public ArrayList bubbleSort(ArrayList arrayList) {
+    public ArrayList bubbleSort(ArrayList arrayList) throws InterruptedException {
         boolean sorted = false;
         int swapped = 0;
         ArrayList<DataObject> sortedTemp = arrayList;
 
         while (!sorted) {
+
             for (int i = 0; i < sortedTemp.size() - 1; i++) {
-                /**
-                 * Passování čerstvě vytříděných dat skrze statickou grafickou komponentu createRectangle, pro vykreslování používáme logaritmické měřítko.
-                 * Metoda getCertainDataState nám získává konkrétní data pro dynamické aktualizace stavu třízení.
-                 */
-                    GUI.getCertainDataState(sortedTemp.get(i).createRectangle((i % 2 == 0 ? i : i + 1), sortedTemp.get(i).getData()));
 
                 /**
                  * Bubble sort algoritmus - zkontroluje n a n + 1 bunky, porovná je a seřadí dle vzestupnosti / sestupnosti hodnot.
@@ -30,7 +26,15 @@ public class BubbleSort {
                     swapped++;
                 }
                 sorted = swapped <= 0;
+
+                /**
+                 * Passování čerstvě vytříděných dat skrze statickou grafickou komponentu createRectangle, pro vykreslování používáme logaritmické měřítko.
+                 * Metoda getCertainDataState nám získává konkrétní data pro dynamické aktualizace stavu třízení.
+                 */
+                GUI.getCertainDataState(sortedTemp.get(i).createRectangle(i * 5, sortedTemp.get(i).getData()));
             }
+            Thread.sleep(50);
+            if (!sorted) GUI.resetFrame();
             swapped = 0;
             System.out.println(sorted);
         }
@@ -40,6 +44,6 @@ public class BubbleSort {
     }
 
     private boolean isInOrder(int data1, int data2) {
-        return data1 > data2;
+        return data1 <= data2;
     }
 }

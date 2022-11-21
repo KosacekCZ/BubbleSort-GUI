@@ -10,9 +10,9 @@ public class GUI {
         frame.setLayout(null);
         frame.setDefaultCloseOperation(3);
         frame.setResizable(false);
-        frame.setBounds(50% - 250, 50% - 250, 500, 500 );
+        frame.setBounds(50% - 250, 50% - 250, 1600, 900 );
 
-        dataVisual.setBounds(5, 5, 481, 350);
+        dataVisual.setBounds(50, 50, 1500, 700);
         dataVisual.setBackground(Color.GRAY);
 
         frame.add(dataVisual);
@@ -24,7 +24,8 @@ public class GUI {
     }
 
     public static void resetFrame() {
-        frame.removeAll();
+        dataVisual.removeAll();
+        frame.repaint();
     }
 
     public static void getCertainDataState(JPanel dot) {
