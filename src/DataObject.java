@@ -20,7 +20,7 @@ public class DataObject {
 
     public JPanel createRectangle(int x, int y) {
         JPanel dot = new JPanel();
-        dot.setBounds(x * 2, 1150 - ((int) (Math.floor(Math.log(y) * 50))), 10, 10);
+        dot.setBounds(x * 10, 1145 - ((int) (Math.floor(Math.log(y) * 50))), 5, 5);
         dot.setBackground(Color.red);
 
         return dot;

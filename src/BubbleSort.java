@@ -21,7 +21,7 @@ public class BubbleSort {
                     sortedTemp.set(i, d2);
                     sortedTemp.set(i + 1, d1);
 
-                    System.out.println("swapped " + sortedTemp.get(i).toString() + " with " + sortedTemp.get(i + 1).toString());
+                    //System.out.println("swapped " + sortedTemp.get(i).toString() + " with " + sortedTemp.get(i + 1).toString());
 
                     swapped++;
                 }
@@ -31,14 +31,14 @@ public class BubbleSort {
                  * Passování čerstvě vytříděných dat skrze statickou grafickou komponentu createRectangle, pro vykreslování používáme logaritmické měřítko.
                  * Metoda getCertainDataState nám získává konkrétní data pro dynamické aktualizace stavu třízení.
                  */
-                GUI.getCertainDataState(sortedTemp.get(i).createRectangle(i * 5, sortedTemp.get(i).getData()));
+                GUI.getCertainDataState(sortedTemp.get(i).createRectangle(i, sortedTemp.get(i).getData()));
             }
-            Thread.sleep(50);
-            if (!sorted) GUI.resetFrame();
-            swapped = 0;
-            System.out.println(sorted);
-        }
 
+            if (!sorted) GUI.resetFrame();
+            Thread.sleep(100);
+            swapped = 0;
+            //System.out.println(sorted);
+        }
 
         return sortedTemp;
     }
