@@ -6,6 +6,7 @@ public class GUI {
     static JPanel dataVisual = new JPanel();
     static JPanel control = new JPanel();
     static JButton start = new JButton();
+    static Canvas canvas = new Canvas();
 
     Color lightGray = new Color(220, 220, 220);
     Color borderGray = new Color(205, 205, 205);
@@ -17,6 +18,9 @@ public class GUI {
         frame.setDefaultCloseOperation(3);
         frame.setResizable(false);
         frame.setBounds(50% - 250, 50% - 250, 1600, 1000 );
+
+        canvas.setBounds(50, 25, 1500, 700);
+        canvas.setBackground(lightGray);
 
         dataVisual.setBounds(50, 25, 1500, 700);
         dataVisual.setBackground(lightGray);
@@ -33,7 +37,7 @@ public class GUI {
         start.setBorder(BorderFactory.createLineBorder(buttonBorderGray));
 
         control.add(start);
-
+        frame.add(canvas);
         frame.add(dataVisual);
         frame.add(control);
         frame.setVisible(true);
@@ -47,8 +51,10 @@ public class GUI {
         dataVisual.removeAll();
     }
 
-    public static void getCertainDataState(JPanel dot) {
+    public static void drawCertainDataState(JPanel dot) throws InterruptedException {
+
         dataVisual.repaint();
+        Thread.sleep(0);
         dataVisual.add(dot);
     }
 

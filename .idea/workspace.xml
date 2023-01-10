@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97efac30-5e31-4aeb-b293-b4b3add467c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv/naklady_zastoupeni.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv/naklady_zastoupeni.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/mikolasp/Downloads/Bomberman",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +71,10 @@
       <workItem from="1669016804644" duration="10309000" />
       <workItem from="1669038766022" duration="4961000" />
       <workItem from="1669068570175" duration="2436000" />
-      <workItem from="1669097067233" duration="3520000" />
+      <workItem from="1669097067233" duration="7562000" />
+      <workItem from="1669199375042" duration="722000" />
+      <workItem from="1669793530413" duration="1160000" />
+      <workItem from="1670157120377" duration="31000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@ public class BubbleSort {
 
         while (!sorted) {
 
-            for (int i = 0; i < sortedTemp.size() - 1; i++) {
+            for (int i = 0; i < sortedTemp.size(); i++) {
 
                 /**
                  * Bubble sort algoritmus - zkontroluje n a n + 1 bunky, porovná je a seřadí dle vzestupnosti / sestupnosti hodnot.
@@ -31,7 +31,7 @@ public class BubbleSort {
                  * Passování čerstvě vytříděných dat skrze statickou grafickou komponentu createRectangle, pro vykreslování používáme logaritmické měřítko.
                  * Metoda getCertainDataState nám získává konkrétní data pro dynamické aktualizace stavu třízení.
                  */
-                GUI.getCertainDataState(sortedTemp.get(i).createRectangle(i, sortedTemp.get(i).getData()));
+                GUI.drawCertainDataState(sortedTemp.get(i).createRectangle(i, sortedTemp.get(i).getData()));
             }
 
             if (!sorted) GUI.resetFrame();
