@@ -8,7 +8,7 @@ public class BubbleSort {
 
         while (!sorted) {
 
-            for (int i = 0; i < sortedTemp.size(); i++) {
+            for (int i = 0; i < sortedTemp.size() - 1; i++) {
 
                 /**
                  * Bubble sort algoritmus - zkontroluje n a n + 1 bunky, porovná je a seřadí dle vzestupnosti / sestupnosti hodnot.
